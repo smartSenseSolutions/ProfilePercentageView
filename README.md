@@ -1,7 +1,7 @@
 # ProfilePercentageView
 
 
-It is Profile Percentage View developed in Kotlin. It Highly customized view that offers multiple attributes to create a Percentage View based on your requirements.
+It is Profile Image View with percentagebar developed in Kotlin. It Highly customized view that offers multiple attributes to create a Percentage View based on your requirements.
 
 ## Demo
 
