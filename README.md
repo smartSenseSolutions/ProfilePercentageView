@@ -1,7 +1,8 @@
 # ProfilePercentageView
 
 
-It is Profile Image View with percentage bar developed in Kotlin. It Highly customized view that offers multiple attributes to create a Percentage View around profile image based on your requirements.
+It is a Profile Image View with percentage progress developed in Kotlin. Its is highly customisable view that offers multiple attributes for creating either dash or continous progress view around profile image based on your requirements.
+
 
 ## Demo
 
