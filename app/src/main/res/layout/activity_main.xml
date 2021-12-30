@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <com.ss.profilepercentageview.ProfilePercentageView
+                android:id="@+id/ppvProfile"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:ppv_arcBackgroundColor="@color/arcBackgroundColor"
+                app:ppv_arcProgressEndColor="@color/progressColor"
+                app:ppv_arcProgressStartColor="@color/progressColor"
+                app:ppv_arcWidth="@dimen/_6sdp"
+                app:ppv_currentValue="72"
+                app:ppv_dashWidth="@dimen/_2sdp"
+                app:ppv_imgBorderColor="@color/borderColor"
+                app:ppv_imgBorderWidth="@dimen/_3sdp"
+                app:ppv_imgPadding="@dimen/_40sdp"
+                app:ppv_isDashEnable="true"
+                app:ppv_isRounded="false"
+                app:ppv_max="100"
+                app:srcCompat="@drawable/pic" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCurrentLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/pop_semi_bold"
+                android:text="Current Value"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ppvProfile" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:stepSize="1"
+                android:value="72"
+                android:valueFrom="0"
+                android:valueTo="100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCurrentLbl" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvArcWidthLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/pop_semi_bold"
+                android:text="Arc Width"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sliderProgress" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderArcWidth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:stepSize="1"
+                android:value="12"
+                android:valueFrom="0"
+                android:valueTo="80"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvArcWidthLbl" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvImgBorderWidthLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/pop_semi_bold"
+                android:text="Image Border Width"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sliderArcWidth" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderImgBorderWidth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:value="12"
+                android:valueFrom="0"
+                android:valueTo="20"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvImgBorderWidthLbl" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvImgPaddingLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/pop_semi_bold"
+                android:text="Image Padding"
+                android:textColor="@color/textColor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sliderImgBorderWidth" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderImgPadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:value="30"
+                android:valueFrom="30"
+                android:valueTo="130"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvImgPaddingLbl" />
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/chkDash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:checked="true"
+                android:text="Dash"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/pop_semi_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sliderImgPadding" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/chkRounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="Rounded"
+                android:textColor="@color/textColor"
+                android:fontFamily="@font/pop_semi_bold"
+                app:layout_constraintStart_toEndOf="@id/chkDash"
+                app:layout_constraintTop_toBottomOf="@id/sliderImgPadding" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

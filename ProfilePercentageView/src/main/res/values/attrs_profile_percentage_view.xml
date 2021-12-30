@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProfilePercentageView">
+        <attr name="ppv_imgBorderWidth" format="dimension" />
+        <attr name="ppv_imgBorderColor" format="color" />
+        <attr name="ppv_imgBorderOverlay" format="boolean" />
+        <attr name="ppv_imgPadding" format="dimension" />
+        <attr name="ppv_circleBackgroundColor" format="color" />
+
+        <attr name="ppv_arcBackgroundColor" format="color" />
+        <attr name="ppv_arcProgressColor" format="color" />
+        <attr name="ppv_max" format="integer" />
+        <attr name="ppv_currentValue" format="integer" />
+        <attr name="ppv_arcWidth" format="dimension" />
+        <attr name="ppv_arcProgressStartColor" format="color" />
+        <attr name="ppv_arcProgressEndColor" format="color" />
+        <attr name="ppv_isDashEnable" format="boolean" />
+        <attr name="ppv_isRounded" format="boolean" />
+        <attr name="ppv_dashWidth" format="dimension" />
+        <attr name="ppv_dashSpace" format="dimension" />
+
+    </declare-styleable>
+</resources>
