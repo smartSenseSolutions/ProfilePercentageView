@@ -21,7 +21,7 @@ allprojects {
 
 Add the dependency in your app ```build.gradle``` file:
 ``` gradle
-implementation 'io.github.smartsensesolutions:ProfilePercentageView:1.0.0'
+implementation 'io.github.smartsensesolutions:ProfilePercentageView:1.0.1'
 
 ```
 ## Usage
@@ -53,7 +53,11 @@ Use the view in your layout.xml by declaring:
                 app:srcCompat="@drawable/pic" />
 ```
 
+For getting current value of progress:
 
+``` kotlin
+ppvProfile.getCurrentValue()
+```
 
 ## Attributes
 
