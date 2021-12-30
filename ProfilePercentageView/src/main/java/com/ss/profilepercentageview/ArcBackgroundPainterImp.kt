@@ -84,8 +84,8 @@ class ArcBackgroundPainterImp(
         initPainter()
     }
 
-    override fun draw(canvas: Canvas) {
-        if(circle != null && paint != null){
+    override fun draw(canvas: Canvas?) {
+        if(circle != null && paint != null && canvas != null){
             canvas.drawArc(circle!!, startAngle, finishAngle, false, paint!!)
         }
     }
