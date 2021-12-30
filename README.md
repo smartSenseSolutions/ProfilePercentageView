@@ -5,6 +5,8 @@ It is Profile Image View with percentage bar developed in Kotlin. It Highly cust
 
 ## Demo
 
+![Preview](https://github.com/smartSenseSolutions/ProfilePercentageView/blob/main/preview/preview.mp4)
+
 
 ## Setup
 
