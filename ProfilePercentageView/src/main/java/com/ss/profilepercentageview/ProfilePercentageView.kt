@@ -541,6 +541,10 @@ class ProfilePercentageView : AppCompatImageView {
         invalidate()
     }
 
+    fun getCurrentValue(): Int{
+        return currentValue
+    }
+
     fun setValue(value: Int) {
         this.currentValue = value
         if (value in minValue..maxValue) {
