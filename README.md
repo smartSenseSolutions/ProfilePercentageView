@@ -1,5 +1,7 @@
 # ProfilePercentageView
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ProfilePercentageView-blue.svg?style=flat)](https://android-arsenal.com/details/1/8283)
+
 
 It is a Profile Image View with percentage progress developed in Kotlin. It is a highly customizable view that offers multiple attributes for creating either dash or continuous progress view around profile image based on your requirements.
 
