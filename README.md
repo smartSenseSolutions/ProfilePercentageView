@@ -90,8 +90,12 @@ Following are the various attributes available to customize the look and feel of
 
 **ppv_imgBorderColor:** Color of the border/stroke around image.
  
-
  
+## MAD (Modern Android Development) Scorecard
+ 
+![Mad Score](https://github.com/smartSenseSolutions/ProfilePercentageView/blob/main/preview/mad_score.png)
+
+
 ## License
 ```
 Copyright 2021 SmartSense Solutions
