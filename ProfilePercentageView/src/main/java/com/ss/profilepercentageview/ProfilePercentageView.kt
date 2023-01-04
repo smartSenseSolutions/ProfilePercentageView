@@ -545,6 +545,13 @@ class ProfilePercentageView : AppCompatImageView {
         return currentValue
     }
 
+    fun setMaxValue(maxValue: Int) {
+        this.maxValue = maxValue
+        if (currentValue in minValue..maxValue) {
+            animateProgressValue()
+        }
+    }
+
     fun setValue(value: Int) {
         this.currentValue = value
         if (value in minValue..maxValue) {
